@@ -1,0 +1,92 @@
+/***************************************************** 
+* FORMULARIO
+* Input, ... 
+******************************************************/
+
+
+/*Propiedades de form*/
+
+form {
+    display: grid;
+    place-items: center;
+    max-width: 800px;
+    height: 40%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    background-color: #FFBD36;
+    text-align: center;
+}
+
+
+/*Propiedades los inputs cunado pinchamos en ellos para rellenarles*/
+
+input:focus {
+    box-shadow: none;
+    border: 1px solid #4b0082;
+}
+
+
+/*Propiedades de inputs*/
+
+input {
+    border: none;
+    margin-bottom: 2%;
+    border-bottom: 2px solid #3D3F43;
+    background-color: #FFBD36;
+    color: #4b0082;
+}
+
+
+/*Propiedades de input submit( el boton)*/
+
+input[type=submit] {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    background-color: #3D3F43;
+    color: #FFBD36;
+}
+
+input[type=submit]:hover {
+    background-color: #FFBD36;
+    color: #3D3F43;
+}
+
+label {
+    display: inline-block;
+}
+
+
+/*Propiedades de select de form*/
+
+select {
+    border: none;
+    color: white;
+    background-color: #3D3F43;
+}
+
+.llama {
+    max-width: 80%;
+}
+
+
+/*Estilos a aplciar cuando informacion no es valida*/
+
+.denegado {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+
+/*Estilos a aplciar cuando informacion es valida*/
+
+.accpetado {
+    color: green;
+    border-bottom: 2px solid green;
+}

@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*Estilo de pedido.*/
+
+#pedidos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3%;
+}

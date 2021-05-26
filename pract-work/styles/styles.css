@@ -1,0 +1,436 @@
+        /****************************************
+* ELEMENTOS COMUNES
+* body, a, h1, h2, h3, h4, h5, img, div 
+*
+/*****************************************************/
+        
+        body {
+            padding: 0px;
+            /*reiniciamos padding*/
+            margin: 0px;
+            /*reiniciamos margin*/
+            background-color: #3D3F43;
+            font-family: 'Barlow', sans-serif;
+            /*aplicamos el font de 
+    google fonts a toda la pagina*/
+        }
+        /*El imagen de la main pagina*/
+        
+        .intro-imagen {
+            width: 100%;
+            height: 80%;
+            min-width: 100%;
+            min-height: auto;
+            /*El height cambia automaticamente*/
+        }
+        /*Los imagenes de productos*/
+        
+        .img-producto {
+            width: 60%;
+            height: auto;
+            /*El height cambia automaticamente*/
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+        }
+        /*El tooltip que se muestra cuando pasamos por email*/
+        /*El texto de color gris del texto */
+        
+        .color-text-gray {
+            color: #3D3F43;
+        }
+        /*El texto decolor amarillo de tooltip*/
+        
+        .tooltip-color-text-yellow {
+            text-shadow: 2px 2px 8px black;
+            color: #FFBD36;
+        }
+        /*Cuando pasamos por email, muestra el tooltip*/
+        /*La decoracion del email*/
+        
+        .mail {
+            text-decoration: none;
+        }
+        /*Propiedades de texto en pagina intro*/
+        
+        .intro-text {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1%;
+            background-color: #FFBD36;
+            color: #4b0082;
+        }
+        /*Propiedades de link no visitado*/
+        
+        .link-majordomo:link {
+            text-decoration: none;
+            color: white;
+        }
+        /*Propiedades de link visitado*/
+        
+        .link-majordomo:visited {
+            color: #FFBD36;
+        }
+        /*Propiedades de link cunado pasamos con el raton sobre link*/
+        
+        .link-majordomo:hover {
+            color: hotpink;
+        }
+        /*Propiedades de link elegido*/
+        
+        .link-majordomo:active {
+            color: blue;
+        }
+        /*Tamano y propiedades de texto de la pagina Info*/
+        
+        .size {
+            text-align: center;
+            font-size: 50px;
+        }
+        /*Tamano y propiedades de texto que esta al lado de video */
+        
+        .size-text-video {
+            margin-left: 1%;
+            margin-right: 1%;
+            text-align: left;
+            padding-bottom: 4%;
+        }
+        /*Estilos de texto que esta al lado de video */
+        
+        .text-style-video {
+            font-size: 30px;
+            text-align: center;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5), 0px -3px 35px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        /*Propiedades de frame con video*/
+        
+        .video_frame {
+            display: block;
+            width: 90%;
+            height: 40rem;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: none;
+        }
+        /*La sombra del frame de video */
+        
+        .shadow-video {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+        }
+        /*Estilos de texto de la pagina Info*/
+        
+        .text-style {
+            font-size: 4rem;
+            text-align: center;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5), 0px -3px 35px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        /*Texto de h2 */
+        
+        .intro_h2 {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 30px;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5), 0px -3px 35px rgba(0, 0, 0, 0.5);
+            color: #FFBD36;
+        }
+        /*Posiciona texto de la pagina intro */
+        
+        .posicion {
+            position: absolute;
+            top: 35%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+        }
+        /*Propiedades de span */
+        
+        span {
+            color: #FFBD36;
+        }
+        /*Div en que colocan los productos que venden en la pagina */
+        
+        .product-block {
+            display: flex;
+            /*Es mas comodo utilizar display flex 
+    para colocar las tarjeas de productos*/
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 3%;
+        }
+        /*Tarjeta de producto*/
+        
+        .producto {
+            position: relative;
+            flex: 0 1 300px;
+            margin: 5px;
+            padding: 3%;
+            width: 20%;
+            height: auto;
+            text-align: center;
+            font-size: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+            color: black;
+            background-color: #FFBD36;
+        }
+        /*Posicion de la primer tarjeta de producto*/
+        
+        .posicion-prod-1 {
+            padding-top: 6%;
+        }
+        /*Cuando pasamos con cursor por la imagen de producto, se hace mas grande este imagen de producto*/
+        
+        .zoom-img:hover {
+            transform: scale(1.2);
+        }
+        /*Propiedades del boton de producto */
+        
+        .bu {
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            color: #FFBD36;
+            background-color: #3D3F43;
+        }
+        
+        button {
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            color: #FFBD36;
+            background-color: #3D3F43;
+        }
+        /*Cuando pasamos con cursor por el boton del producto, cambia el color de texto y color de fondo*/
+        
+        button:hover {
+            background-color: #FFBD36;
+            color: #3D3F43;
+        }
+        /*Propiedades de la pagina activa(en que estamos en este momento)*/
+        
+        .active {
+            color: purple;
+        }
+        /*Cuando pasamos con cursor por el link en menu, se hace mas grande este link y cambia su color */
+        
+        .zoom:hover {
+            transform: scale(1.5);
+            color: #4b0082;
+        }
+        /*Posicionamento de texto que esta en la pagina con video. */
+        
+        .video_article {
+            text-align: center;
+        }
+        /*Posicionamento de section introduccion de la pagina main. */
+        
+        .container {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+        /*****************************************************
+* ESTRUCTURA
+* #header, #content, #sidebar1, #sidebar2, #footer 
+******************************************************/
+        /*Posicionamento y propiedades de menu */
+        
+        nav {
+            display: flex;
+            /*Para nav es mas comodo utilizar el flex, porque permite */
+            top: 0;
+            z-index: 1;
+            position: relative;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            min-width: 100%;
+            background-color: #FFBD36;
+        }
+        /*Propiedades de los links del menu */
+        
+        nav a {
+            text-decoration: none;
+            font-size: 30px;
+            color: #3D3F43;
+        }
+        /*Propiedades de los links del menu */
+        /*Propiedades de subnav*/
+        
+        nav .subnav {
+            flex: 5%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            align-items: center;
+            text-align: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-size: 30px;
+            color: #3D3F43;
+        }
+        
+        .subnav .subnavbtn {
+            font-size: 30px;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            color: #3D3F43;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        /* Add a red background color to navigation links on hover */
+        
+        .navbar a:hover,
+        .subnav:hover .subnavbtn {
+            background-color: #3D3F43;
+            color: #FFBD36;
+        }
+        /* Style the subnav content - positioned absolute */
+        
+        #color-purple {
+            background-color: #4b0082;
+        }
+        
+        #color-gray {
+            background-color: #3D3F43;
+        }
+        
+        .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+        }
+        /* Style the subnav links */
+        
+        .subnav-content a {
+            float: right;
+            color: #FFBD36;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        /* Add a grey background color on hover */
+        
+        .subnav-content a:hover {
+            background-color: #FFBD36;
+            color: #4b0082;
+        }
+        /* When you move the mouse over the subnav container, open the subnav content */
+        
+        .subnav:hover .subnav-content {
+            display: block;
+        }
+        /*Propiedades y posicionamento de footer de la pagina */
+        
+        .container-images-xiaomi {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .img-xiaomi {
+            width: 30%;
+            height: auto;
+            padding: 10px;
+        }
+        
+        .img-xiaomi:hover {
+            opacity: 0.8;
+        }
+        
+        footer {
+            position: absolute;
+            z-index: 1;
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+            color: #FFBD36;
+        }
+        
+        .footer-color-gray {
+            color: #FFBD36;
+            background-color: #3D3F43;
+        }
+        /*Footer de color amarillo con le texto gris */
+        
+        .footer-color-yellow {
+            color: #3D3F43;
+            background-color: #FFBD36;
+        }
+        /*** *** Responsive Web @media *** *************************************/
+        
+        @media screen and (max-width: 400px) {
+            .form {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .contacto {
+                font-size: 80%;
+            }
+            .llama {
+                margin-right: 10%;
+                margin-left: 10%;
+            }
+        }
+        
+        @media screen and (max-width: 750px) {
+            .text-style {
+                font-size: 2rem;
+            }
+            .video_frame {
+                width: 70%;
+                height: 25rem;
+                max-width: 90%;
+                max-height: 30%;
+                border-style: none;
+            }
+            /*Tamano y propiedades de texto que esta al lado de video */
+            .size-text-video {
+                text-align: center;
+                padding-bottom: 4%;
+            }
+        }
+        
+        @media screen and (max-width: 800px) {
+            .text-style {
+                padding: 1%;
+                font-size: 2rem;
+            }
+            .intro-imagen {
+                height: auto;
+                width: 100%;
+            }
+            nav {
+                padding-bottom: 0.5rem;
+                font-size: 2rem;
+                padding-top: 0.5rem;
+                flex-direction: column;
+                height: 20%;
+            }
+            nav a {
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+            .form {
+                min-width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        
+        @media screen and (max-width: 1050px) {
+            .form {
+                max-width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .zoom:hover {
+                transform: scale(1.1);
+            }
+        }

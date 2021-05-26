@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es-es">
+
+<head>
+    <!--Codificacion utf-8-->
+    <meta charset="utf-8">
+    <!--El titulo de la pagina-->
+    <title>Casa Smart Form</title>
+    <!--El link a codigo css-->
+    <link rel=" stylesheet " href="/styles/styles.css ">
+    <link rel=" stylesheet " href="/styles/form-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--El link a google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap" rel="stylesheet">
+    <script src="/scripts/script-form-pedido.js"></script>
+    <script src="/scripts/bin-id-key.js"></script>
+</head>
+
+<body>
+    <header>
+        <!--El menu de la pagina-->
+        <nav>
+
+            <div class="subnav">
+                <a href="/pages/inicio.html " class="zoom ">INICIO</a>
+            </div>
+            <div class="subnav">
+                <a href="/pages/info-multimedia.html" class="zoom "> INFO+MULTIMEDIA</a>
+            </div>
+            <div class="subnav">
+                <a href="/pages/quiero.html " class="zoom ">MAS INFO</a>
+            </div>
+            <div class="subnav">
+                <a href="/pages/pedido.html " class="zoom ">PEDIR</a>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn" onclick="window.location.href = '/pages/productos.html';">PRODUCTOS<i class="zoom"></i></button>
+                <div id="color-gray" class="subnav-content">
+                    <a href="/pages/xiomi.html">Xiaomi</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--La forma para contactar-->
+    <section class="forms">
+        <h2 id="intro_h2" class="intro_h2">Tu pedido:</h2>
+        <form name="formPedido" onsubmit="return validateForm()">
+            <!--Recibir el Nombre -->
+            <label for="name">Tu nombre y apellido:</label><br>
+            <input id="name" name="name" required><br>
+            <!--Recibir el Email -->
+            <label for="num-hab">Cantidad de habitaciones</label><br>
+            <input type="number" id="quantity_hab" name="quantity" min="1" max="7" required>
+            <label for="num-hab">Cantidad de enchufes u enterruptores por habitacion</label><br>
+            <input type="number" id="quantity_ench" name="quantity" min="1" max="20" required>
+            <!--Recibir el Numero de telefono -->
+            <label for="phone">Tu Numero de Telefono:</label><br>
+            <input id="phone" name="phone" placeholder="123-456-789"><br>
+            <label for="name" class="contacto">Cual sistema IoT quieres?</label><br>
+            <!--Eligir el tipo de contacto el cliente -->
+            <select id="tipo-instalacion" name="tipo-instalacion" class="llama">
+                <option value="tipo-instalacion"  >XIAOMI </option>
+                <option value="tipo-instalacion">SONOFF</option>
+              </select><br>
+            <!--El boton que manda este formo a servidor -->
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <!--El texto de la form-->
+    <section>
+        <h2 class="intro_h2" onclick="location.href='/pages/all-pedidos.html'" style="cursor: pointer;">Visualizar Pedidos</h2>
+
+    </section>
+    <!--El footer de la pagina con la informacion sobre creador de la pagina, ademas con 
+        link de tipo e mail, que se permite pinchando a este link directamente escribir el mail-->
+    <footer class="footer-color-yellow">
+        <p>Esta pagina esta diseñada por ATAER GIUNESH
+            <a href="mailto:hege@example.com" class="mail tooltip-yellow color-text-gray">ataerg@outlook.com <span class="tooltiptext tooltip-color-text-yellow">¡Escribeme!</span></a>
+        </p>
+    </footer>
+</body>
+
+</html>

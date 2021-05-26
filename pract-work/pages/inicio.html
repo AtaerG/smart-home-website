@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es-es">
+
+<head>
+    <!--Codificacion utf-8-->
+    <meta charset="utf-8">
+    <!--El titulo de la pagina-->
+    <title>Smart Casa</title>
+    <!--El link a codigo css-->
+    <link rel=" stylesheet " href="/styles/styles.css ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--El link a google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap" rel="stylesheet">
+
+    <body>
+        <header>
+            <!--El menu de la pagina-->
+            <nav>
+                <div class="subnav">
+                    <a href="/pages/inicio.html " class="zoom active ">INICIO</a>
+                </div>
+                <div class="subnav">
+                    <a href="/pages/info-multimedia.html" class="zoom "> INFO+MULTIMEDIA</a>
+                </div>
+                <div class="subnav">
+                    <a href="/pages/quiero.html " class="zoom ">MAS INFO</a>
+                </div>
+                <div class="subnav">
+                    <a href="/pages/pedido.html " class="zoom ">PEDIR</a>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn" onclick="window.location.href = '/pages/productos.html';">PRODUCTOS<i class="zoom"></i></button>
+                    <div id="color-gray" class="subnav-content">
+                        <a href="/pages/xiomi.html">Xiaomi</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--Texto de introduccion a la pagina -->
+        <section class="container">
+            <img class="intro-imagen" src="/images/intro-house.jpg" alt="Casa smart">
+            <h2 class="text-style posicion">¿Quieres hacer tu casa <span>SMART</span>?</h2>
+        </section>
+        <!--Texto explicacion -->
+        <section class="intro-text">
+            <h2>
+                En el siglo 21 todas las casas se pueden hacer <em>SMART</em>.
+            </h2>
+            <p>
+                Que es una casa <em>SMART</em>? Es una casa inteligente, donde las instalaciones electricas son controladas a distancia desde un dispositivo.
+            </p>
+        </section>
+        <!--El footer de la pagina con la informacion sobre creador de la pagina, ademas con 
+        link de tipo e mail, que se permite pinchando a este link directamente escribir el mail-->
+        <footer class="footer-color-gray">
+            <p>Esta pagina esta diseñada por ATAER GIUNESH
+                <a href="mailto:hege@example.com" class="mail tooltip-yellow  tooltip-color-text-yellow">ataerg@outlook.com <span class="tooltiptext">¡Escribeme!</span></a>
+            </p>
+        </footer>
+    </body>
+
+</html>

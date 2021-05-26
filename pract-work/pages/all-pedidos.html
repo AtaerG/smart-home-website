@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-es">
+
+<head>
+    <!--Codificacion utf-8-->
+    <meta charset="utf-8">
+    <!--El titulo de la pagina-->
+    <title>Casa Smart Form</title>
+    <!--El link a codigo css-->
+    <link rel=" stylesheet " href="/styles/styles.css ">
+    <link rel=" stylesheet " href="/styles/style-pedidos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--El link a google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap" rel="stylesheet">
+    <script src="/scripts/script-form-pedido.js"></script>
+    <script src="/scripts/bin-id-key.js"></script>
+</head>
+
+<body onload="leerColeccion()">
+    <header>
+        <!--El menu de la pagina-->
+        <nav>
+
+            <div class="subnav">
+                <a href="/pages/inicio.html " class="zoom ">INICIO</a>
+            </div>
+            <div class="subnav">
+                <a href="/pages/info-multimedia.html" class="zoom "> INFO+MULTIMEDIA</a>
+            </div>
+            <div class="subnav">
+                <a href="/pages/quiero.html " class="zoom ">MAS INFO</a>
+            </div>
+            <div class="subnav">
+                <a href="/pages/pedido.html " class="zoom ">PEDIR</a>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn" onclick="window.location.href = '/pages/productos.html';">PRODUCTOS<i class="zoom"></i></button>
+                <div id="color-gray" class="subnav-content">
+                    <a href="/pages/xiomi.html">Xiaomi</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--El div que va a mostrar los pedidos creados.-->
+    <div id="pedidos">
+
+    </div>
+    <!--El footer de la pagina con la informacion sobre creador de la pagina, ademas con 
+        link de tipo e mail, que se permite pinchando a este link directamente escribir el mail-->
+    <footer class="footer-color-yellow">
+        <p>Esta pagina esta diseñada por ATAER GIUNESH
+            <a href="mailto:hege@example.com" class="mail tooltip-yellow color-text-gray">ataerg@outlook.com <span class="tooltiptext tooltip-color-text-yellow">¡Escribeme!</span></a>
+        </p>
+    </footer>
+</body>
+
+</html>
